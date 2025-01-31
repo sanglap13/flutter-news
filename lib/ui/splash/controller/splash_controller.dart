@@ -8,7 +8,7 @@ class SplashController extends GetxController {
   void onInit() {
     // TODO: implement onInit
     super.onInit();
-    log("onInit");
+    log("onInit ${Get.height} ${Get.width}");
   }
 
   @override
@@ -19,7 +19,7 @@ class SplashController extends GetxController {
 
     await Future.delayed(
       5.seconds,
-      () => Get.toNamed(HomeView.name),
+      () => Get.offNamed(HomeView.name),
     );
   }
 

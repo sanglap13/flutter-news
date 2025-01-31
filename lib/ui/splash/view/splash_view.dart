@@ -14,6 +14,7 @@ class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(SplashController());
+    
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: SizedBox(
